@@ -13,6 +13,7 @@ const MessageForm = (props) => {
   };
 
   const handleSubmit = (event) => {
+    console.log(props);
     event.preventDefault();
 
     const text = value.trim();
