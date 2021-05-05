@@ -3,7 +3,6 @@ import { ChatEngine } from 'react-chat-engine';
 import ChatFeed from './components/ChatFeed';
 import OptionsSettings from "./components/OptionsSettings";
 import LoginForm from './components/LoginForm';
-import './App.css';
 
 const projectID = '98b3415e-e10b-4f1a-bca1-488cf9165465';
 

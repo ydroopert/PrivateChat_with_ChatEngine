@@ -9,6 +9,10 @@ function handleClick() {
     localStorage.clear();
     window.location.reload();
 }
+function changeTheme(){
+    const theme= document.querySelector("#theme-link");
+    theme.getAttribute("href") === "Dark.css"? theme.href ="App.css" : theme.href = "Dark.css";
+}
 const OptionsSettings = props => {
     const [state, setState] = useState({
         collapsed: true,
@@ -51,9 +55,16 @@ const OptionsSettings = props => {
                     <Button 
                         value="Log Out" 
                         theme='danger'
-                        icon='delete'
                         id='ce-delete-chat-button'
                         onClick={handleClick}
+                        style={{ width: '100%', marginBottom: '12px' }}
+                    />
+                    <Button 
+                        class="btn-toggle"
+                        value="Dark theme" 
+                        theme='danger'
+                        id='ce-delete-chat-button'
+                        onClick={changeTheme}
                         style={{ width: '100%', marginBottom: '12px' }}
                     />
                 </div>
