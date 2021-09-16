@@ -13,4 +13,3 @@ logout: cleared local storage username+passwd then refresh back to Login page
 
 dark-theme: Created a seperate CSS file to toggle between dark/light theme.
 
-2nd plan is to add SignUp function+SignUp page.
